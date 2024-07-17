@@ -1,5 +1,5 @@
-import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
-import ExploreContainer from '../components/ExploreContainer';
+import React from 'react';
+import { IonPage, IonHeader, IonToolbar, IonTitle, IonContent, IonList, IonItem, IonLabel, IonToggle, IonButton } from '@ionic/react';
 import './Tab2.css';
 
 const Tab2: React.FC = () => {
@@ -7,16 +7,28 @@ const Tab2: React.FC = () => {
     <IonPage>
       <IonHeader>
         <IonToolbar>
-          <IonTitle>Tab 2</IonTitle>
+          <IonTitle>Profile & Settings</IonTitle>
         </IonToolbar>
       </IonHeader>
-      <IonContent fullscreen>
-        <IonHeader collapse="condense">
-          <IonToolbar>
-            <IonTitle size="large">Tab 2</IonTitle>
-          </IonToolbar>
-        </IonHeader>
-        <ExploreContainer name="Tab 2 page" />
+      <IonContent className="ion-padding">
+        <IonList>
+          <IonItem>
+            <IonLabel>Profile</IonLabel>
+            <IonButton expand="block" routerLink="/profile">View Profile</IonButton>
+          </IonItem>
+          <IonItem>
+            <IonLabel>Notifications</IonLabel>
+            <IonToggle slot="end" />
+          </IonItem>
+          <IonItem>
+            <IonLabel>Dark Mode</IonLabel>
+            <IonToggle slot="end" />
+          </IonItem>
+          <IonItem>
+            <IonLabel>Language</IonLabel>
+            <IonButton expand="block" routerLink="/language-settings">Change Language</IonButton>
+          </IonItem>
+        </IonList>
       </IonContent>
     </IonPage>
   );

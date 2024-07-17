@@ -1,0 +1,36 @@
+/* Conversation.css */
+
+.ion-padding {
+    padding: 16px;
+  }
+  
+  .ion-card {
+    margin-bottom: 16px;
+  }
+  
+  .ion-card-header {
+    background-color: #f8f8f8;
+  }
+  
+  .ion-card-title {
+    font-size: 1.2em;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .ion-card-content {
+    font-size: 1em;
+    color: #333;
+  }
+  
+  .ion-button {
+    margin-top: 16px;
+  }
+  
+  .sound-wave {
+    width: 100%;
+    height: 100px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+  }
+  

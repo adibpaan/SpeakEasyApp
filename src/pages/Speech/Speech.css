@@ -1,0 +1,62 @@
+.ion-padding {
+    padding: 16px;
+}
+
+.ion-card {
+    margin: 5px; /* Reduce the margin to decrease the gap between cards */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.ion-card-title {
+    display: block; /* Ensure title is a block element */
+    text-align: center; /* Center align the title text */
+    font-size: 1rem; /* Adjust this value as needed for the title font size */
+    margin-top: 0.5rem; /* Add some space between the icon and the title */
+    word-wrap: break-word; /* Ensure the title text wraps if it's too long */
+    font-weight: bold; /* Add font weight for better visibility */
+  }
+  
+  .ion-card-content {
+    font-size: 0.9em;
+    line-height: 1.5;
+  }
+  
+  .hoverable-card {
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .hoverable-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .hoverable-card:hover .ion-card-title {
+    color: var(--ion-color-primary);
+  }
+  
+  .icon {
+    display: block;
+    margin: 0 auto;
+    font-size: 2rem; /* Adjust the size of the icon as needed */
+  }
+  
+  .card-header {
+    text-align: center; /* Center align the header content */
+  }
+  
+  .card-title {
+    font-size: 1rem !important; /* Override the default font size */
+  }
+  
+  .modal-content {
+    padding: 16px;
+    text-align: center;
+  }
+  
+  .modal-content p {
+    margin: 16px 0;
+  }
+  
+  .ion-button {
+    margin-top: 16px; /* Add some space between buttons */
+  }

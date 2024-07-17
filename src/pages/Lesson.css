@@ -1,0 +1,35 @@
+/* Tab1.css */
+
+.header-image {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .header-image img {
+    width: 150px; /* Set a fixed width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px;
+  }
+  
+  .card-hover {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .card-hover:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .ion-padding {
+    padding: 16px;
+  }
+  
+  .ion-card-title {
+    display: flex;
+    align-items: center;
+  }
+  
+  .ion-card-title ion-icon {
+    margin-right: 10px;
+  }
+  

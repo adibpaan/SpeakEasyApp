@@ -10,10 +10,23 @@ import {
   setupIonicReact
 } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
-import { ellipse, square, triangle } from 'ionicons/icons';
+import { homeOutline, bookOutline, helpCircleOutline, informationCircleOutline } from 'ionicons/icons';
 import Tab1 from './pages/Tab1';
 import Tab2 from './pages/Tab2';
 import Tab3 from './pages/Tab3';
+import Lesson from './pages/Lesson';
+import About from './pages/About';
+import Grammar from './pages/Grammar/Grammar';
+import GetStarted from './pages/GetStarted/GetStarted'; 
+import Importance from './pages/Importance/Importance';
+import Profile from './pages/Profile/Profile';
+import LanguageSettings from './pages/LanguageSettings/LanguageSettings';
+import Speech from './pages/Speech/Speech';
+import Introduction from './pages/Introduction/Introduction';
+import Conversation from './pages/Conversation/Conversation';
+import Presentation from './pages/Presentation/Presentation';
+import PracticePresentation from './pages/Presentation/PracticePresentation';
+import Quizzes from './pages/Quizzes/Quizzes';
 
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
@@ -61,22 +74,41 @@ const App: React.FC = () => (
           <Route path="/tab3">
             <Tab3 />
           </Route>
-          <Route exact path="/">
-            <Redirect to="/tab1" />
+          <Route path="/lesson">
+            <Lesson />
           </Route>
+          <Route path="/about">
+            <About />
+          </Route>
+          <Route path="/grammar" component={Grammar} exact={true} />
+          <Route path="/importance" component={Importance} exact={true} />
+          <Route path="/speech" component={Speech} exact={true} />
+          <Route path="/introduction" component={Introduction} exact={true} />
+          <Route path="/conversation" component={Conversation} exact={true} />
+          <Route path="/presentation" component={Presentation} exact={true} />
+          <Route path="/practice-presentation" component={PracticePresentation} exact={true} />
+          <Route path="/quizzes" component={Quizzes} exact={true} />
+          <Route path="/profile" component={Profile} exact={true} />
+          <Route path="/language-settings" component={LanguageSettings} exact={true} />
+          <Route path="/get-started" component={GetStarted} exact={true} />
+          <Route exact path="/" render={() => <Redirect to="/get-started" />} />
         </IonRouterOutlet>
         <IonTabBar slot="bottom">
           <IonTabButton tab="tab1" href="/tab1">
-            <IonIcon aria-hidden="true" icon={triangle} />
-            <IonLabel>Tab 1</IonLabel>
+            <IonIcon aria-hidden="true" icon={homeOutline} />
+            <IonLabel>Home</IonLabel>
           </IonTabButton>
-          <IonTabButton tab="tab2" href="/tab2">
-            <IonIcon aria-hidden="true" icon={ellipse} />
-            <IonLabel>Tab 2</IonLabel>
+          <IonTabButton tab="lesson" href="/lesson">
+            <IonIcon aria-hidden="true" icon={bookOutline} />
+            <IonLabel>Lesson</IonLabel>
           </IonTabButton>
-          <IonTabButton tab="tab3" href="/tab3">
-            <IonIcon aria-hidden="true" icon={square} />
-            <IonLabel>Tab 3</IonLabel>
+          <IonTabButton tab="quizzes" href="/quizzes">
+            <IonIcon aria-hidden="true" icon={helpCircleOutline} />
+            <IonLabel>Quiz</IonLabel>
+          </IonTabButton>
+          <IonTabButton tab="about" href="/about">
+            <IonIcon aria-hidden="true" icon={informationCircleOutline} />
+            <IonLabel>About</IonLabel>
           </IonTabButton>
         </IonTabBar>
       </IonTabs>

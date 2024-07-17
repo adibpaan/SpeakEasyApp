@@ -1,0 +1,31 @@
+.ion-padding {
+  padding: 16px;
+}
+
+.ion-card {
+  margin-bottom: 20px;
+}
+
+.ion-card-title {
+  display: flex;
+  align-items: center;
+}
+
+.ion-card-title ion-icon {
+  margin-right: 10px;
+}
+
+.importance-image {
+  width: 100%;
+  border-radius: 8px;
+  /* margin-top: 20px; */
+}
+
+.hoverable-card {
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.hoverable-card:hover {
+  transform: scale(1.05);
+}

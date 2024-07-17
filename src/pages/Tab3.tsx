@@ -1,5 +1,5 @@
-import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
-import ExploreContainer from '../components/ExploreContainer';
+import React from 'react';
+import { IonPage, IonHeader, IonToolbar, IonTitle, IonContent, IonCard, IonCardHeader, IonCardTitle, IonCardContent, IonList, IonItem, IonLabel, IonProgressBar } from '@ionic/react';
 import './Tab3.css';
 
 const Tab3: React.FC = () => {
@@ -7,16 +7,49 @@ const Tab3: React.FC = () => {
     <IonPage>
       <IonHeader>
         <IonToolbar>
-          <IonTitle>Tab 3</IonTitle>
+          <IonTitle>Progress & Achievements</IonTitle>
         </IonToolbar>
       </IonHeader>
-      <IonContent fullscreen>
-        <IonHeader collapse="condense">
-          <IonToolbar>
-            <IonTitle size="large">Tab 3</IonTitle>
-          </IonToolbar>
-        </IonHeader>
-        <ExploreContainer name="Tab 3 page" />
+      <IonContent className="ion-padding">
+        <IonCard>
+          <IonCardHeader>
+            <IonCardTitle>Progress</IonCardTitle>
+          </IonCardHeader>
+          <IonCardContent>
+            <IonList>
+              <IonItem>
+                <IonLabel>Grammar</IonLabel>
+                <IonProgressBar value={0.7}></IonProgressBar>
+              </IonItem>
+              <IonItem>
+                <IonLabel>Parts of Speech</IonLabel>
+                <IonProgressBar value={0.5}></IonProgressBar>
+              </IonItem>
+              <IonItem>
+                <IonLabel>Conversation</IonLabel>
+                <IonProgressBar value={0.6}></IonProgressBar>
+              </IonItem>
+            </IonList>
+          </IonCardContent>
+        </IonCard>
+        <IonCard>
+          <IonCardHeader>
+            <IonCardTitle>Achievements</IonCardTitle>
+          </IonCardHeader>
+          <IonCardContent>
+            <IonList>
+              <IonItem>
+                <IonLabel>Grammar Master</IonLabel>
+              </IonItem>
+              <IonItem>
+                <IonLabel>Conversationalist</IonLabel>
+              </IonItem>
+              <IonItem>
+                <IonLabel>Presentation Pro</IonLabel>
+              </IonItem>
+            </IonList>
+          </IonCardContent>
+        </IonCard>
       </IonContent>
     </IonPage>
   );

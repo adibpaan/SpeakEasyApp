@@ -1,0 +1,14 @@
+/* Presentation.css */
+
+.ion-padding {
+    padding: 16px;
+  }
+  
+  .ion-card-header {
+    cursor: pointer;
+  }
+  
+  .ion-card-header:hover {
+    background-color: #f0f0f0;
+  }
+  

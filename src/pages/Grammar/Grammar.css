@@ -1,0 +1,54 @@
+.ion-padding {
+    padding: 16px;
+  }
+  
+  .ion-card {
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .ion-card-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: color 0.3s ease;
+  }
+  
+  .ion-card-content {
+    font-size: 0.9em;
+    line-height: 1.5;
+  }
+  
+  .grammar-image {
+    width: 100%;
+    max-width: 300px; /* Adjust the max width as needed */
+    margin: 20px auto;
+    border-radius: 8px;
+  }
+  
+  .hoverable-card {
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .hoverable-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .hoverable-card:hover .ion-card-title {
+    color: var(--ion-color-primary);
+  }
+  
+  .video-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .video-container iframe {
+    width: 100%;
+    max-width: 560px;
+    height: 315px;
+    border-radius: 8px;
+  }
+  

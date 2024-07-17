@@ -1,0 +1,76 @@
+.header-image {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.header-image img {
+  width: 150px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.slider-image {
+  width: 80px; /* Adjust width as needed */
+  height: auto;
+  border-radius: 10px;
+}
+
+.lesson-item {
+  transition: background-color 0.3s ease;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  padding: 15px;
+}
+
+.lesson-item:hover {
+  background-color: #f0f0f0;
+}
+
+.ion-padding {
+  padding: 16px;
+}
+
+.custom-head2 {
+  margin: 20px 0 10px;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.card-hover {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-hover:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.ion-card-title {
+  display: flex;
+  align-items: center;
+}
+
+.ion-card-title ion-icon {
+  margin-right: 10px;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.ion-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Override Swiper styles for the slider images */
+.swiper .swiper-slide img {
+  width: 80px; /* Adjust width as needed */
+  height: auto;
+  max-width: none; /* Override Swiper's max-width */
+  max-height: none; /* Override Swiper's max-height */
+}

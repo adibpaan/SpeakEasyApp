@@ -1,0 +1,14 @@
+.ion-padding {
+    padding: 16px;
+  }
+  
+  .score {
+    margin-top: 8px;
+    font-size: 1.2em;
+    color: #3880ff;
+  }
+  
+  .ion-card-content {
+    text-align: center;
+  }
+  
